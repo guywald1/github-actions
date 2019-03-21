@@ -9,7 +9,7 @@ LABEL com.github.actions.color="blue"
 
 ENV GITHUB_ACTION_NAME="Deploy to Azure Storage for Static Website Hosting"
 
-COPY public public
+COPY . .
 
 RUN chmod +x /entrypoint.sh
 
